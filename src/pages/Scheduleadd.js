@@ -12,7 +12,7 @@ export default function Scheduleadd() {
     }
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        //<form onSubmit={handleSubmit(onSubmit)}>
             <div className="page">
                 <div className="container1" >  {/* 상단바 */}
 
