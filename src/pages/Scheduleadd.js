@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
-
 import React, { useEffect, useState, useRef } from 'react'
+import '../css/Scheduleadd.css';
+
 
 export default function Scheduleadd() {
     const {register, watch, formState:{errors}, handleSubmit, getValues} = useForm();
@@ -21,84 +22,86 @@ export default function Scheduleadd() {
 
 
                 <div className="container2">  {/* 타이틀, 설정 */}
-                        <div className=""></div>  {/* 타이틀 */}
-                        <div className=""></div>  {/* 설정 */}
+                        <div className="title">NoStupid</div>  {/* 타이틀 */}
+                        <div className="set">set</div>  {/* 설정 */}
                 </div>
 
 
                 <div className="container3">  {/* 타이틀 아래 */}
 
-                    <div className="">  {/* 막대표시 */}
+                    <div className="bar">  {/* 막대표시 */}
                     </div>
 
-                    <div className="">  {/* 입력내용 */}
+                    <div className="nameInput">  {/* 입력내용 */}
                     <input 
-                        className=""
+                        className="name"
                         placeholder='회사명'
                     />
                     </div>
 
-                    <div className="">  {/* 입력내용 */}
+                    <div className="interviewInput"><p className='interviewFont'>예상 면접 질문</p>  {/* 입력내용 */}
+                    <p></p>
                     <input 
-                        className=""
-                        placeholder='예상 면접 질문'
+                        className="interview"
+                        placeholder='1. '
                     />
                     </div>
 
-                    <div className="">  {/* 입력내용 */}     
+                    <div className="placeInput">  {/* 입력내용 */}     
                     <input 
-                        className=""
+                        className="place"
                         placeholder='장소'
                     />
                     </div>
                     
-                    <div className="">  {/* 입력내용 */}   
+                    <div className="timeInput">  {/* 입력내용 */}   
                     <input 
-                        className=""
+                        className="time"
                         placeholder='시간'
                     />   
                     </div>
                     
-                    <div className="">  {/* 입력내용 */} 
+                    <div className="dateInput">  {/* 입력내용 */} 
                     <input 
-                        className=""
+                        className="date"
                         placeholder='yyyy.mm.dd'
                     />          
                     </div>
                     
-                    <div className="">  {/* 입력내용 */}
+                    <div className="notionInput">  {/* 입력내용 */}
                     <input 
-                        className=""
+                        className="notion"
                         placeholder='노션링크'
                     /> 
                     </div>
                             
-                    <div className="">  {/* 입력내용 */}
+                    <div className="gitInput">  {/* 입력내용 */}
                     <input 
-                        className=""
+                        className="git"
                         placeholder='깃허브'
                     /> 
                     </div>
                             
-                    <div className="">  {/* 입력내용 */}
+                    <div className="columnInput">  {/* 입력내용 */}
                     <input 
-                        className=""
+                        className="column"
                         placeholder='회고란'
                     /> 
                     </div>
 
-                    <div className="">  {/* 버튼 */}   
-                    <input 
-                        type="submit"
-                        style={{ marginTop: '40px' }}
-                    />
+                    <div className="submit">  {/* 버튼 */}   
+                    <button
+                    //onClick={onClickConfirmButton}
+                    //disabled={notAllow}
+                    className='addButton'>
+                    <p className='add'>ADD</p>
+                  </button>
                     </div>
                         
                 </div>
                     
                     
-            </div>  
-        </form>
+            </div>
 
     )
 }

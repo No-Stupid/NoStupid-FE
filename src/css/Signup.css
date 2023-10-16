@@ -55,12 +55,12 @@ body{
     
     outline: none;
 	border: none;
-    background: rgba(250, 83, 44, 0.85);
+    background: rgba(101, 101, 101, 0.85);
     border-radius: 12px;
  
 }
 .nextButton:disabled {
-    background-color: #F79E89;
+    background-color: #D3D3D3;
     color: white;
 }
 p{
@@ -240,8 +240,6 @@ p{
     top: 320px;
     border: 1px solid rgba(39, 39, 39, 0.5);
     border-radius: 12px;
-    
-
 
 }
 .num{
