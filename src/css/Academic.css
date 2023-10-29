@@ -2,41 +2,35 @@ body{
     position: relative;
 }
 
-.page {
+.page_{
 	position: relative;
     padding: 1%;
     width: 375px;
-    height: 812px;
+    height: 960px;
     background: #FFFFFF;
     margin: 0 auto;
 
-}
-.container1{
-    position: absolute;
-    width: 340px;
-    height: 18.31px;
-    left: 22px;
-    top: 12px;
-
 
 }
-.container2{
+
+.container1_2{
     position: absolute;
     width: 340px;
     height: 65px;
     left: 22px;
-    top: 51px;
+    top: 30px;
 
 }
-.back{
+.back_Icon{
     /* chevron-left */
     position: absolute;
     width: 24px;
     height: 24px;
+    top: 20px;
 
 }
 
-.title{
+.title_Aca{
 /* 학력 정보 */
 
 position: absolute;
@@ -56,26 +50,27 @@ letter-spacing: 0.01em;
 color: #000000;
 
 }
-.line{
+.line__{
     /* Line 3 */
     
     position: absolute;
     width: 385px;
     height: 0px;
     right: 0px;
-    top: 120px;
+    top: 100px;
     
     border: 1px solid #EBEBEB;
     
 }
-.container3{
+.container3__{
     position: absolute;
     width: 375px;
-    height: 812px;
-    left: 0px;
-    top: 125px;
+    height: 840px;
+    left: 6px;
+    top: 105px;
     border-radius: 0px 0px 0px 0px;
     background: #ffffff;
+
 }
 
 .starDiv{
@@ -98,7 +93,7 @@ letter-spacing: 0.01em;
 color: #949494;
 
 }
-.schoolInput{
+.schoolInput_{
 /* 학교 */
 
 position: absolute;
@@ -106,8 +101,10 @@ width: 340px;
 height: 80px;
 left: 17px;
 top: 40px;
+
+
 }
-.name1{
+.name1_{
 
 /* 학교 */
 
@@ -121,7 +118,19 @@ letter-spacing: 0.01em;
 
 color: #000000;
 }
+.selectSchool{
+    box-sizing: border-box;
+    position: absolute;
+    width: 157px;
+    height: 31px;
+    left: 3px;
 
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    cursor: pointer;
+}
 .school{
 /* Rectangle 15 */
 
@@ -137,17 +146,16 @@ border: 1px solid #000000;
 border-radius: 12px;
 
 }
-.inInput{
-/* 학위 */
-
-position: absolute;
-width: 340px;
-height: 80px;
-left: 17px;
-top: 120px;
-
+.in__Input{
+    position: absolute;
+    width: 340px;
+    height: 80px;
+    left: 17px;
+    top: 130px;
+    
 }
-.name2{
+
+.name2_{
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
@@ -173,17 +181,16 @@ border: 1px solid #000000;
 border-radius: 12px;
 
 }
-.outInput{
-/* 전공 */
 
-position: absolute;
-width: 340px;
-height: 80px;
-left: 17px;
-top: 200px;
+.out__Input{
+    position: absolute;
+    width: 340px;
+    height: 80px;
+    left: 17px;
+    top: 220px;
 
 }
-.name3{
+.name3_{
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 00;
@@ -210,17 +217,18 @@ border: 1px solid #000000;
 border-radius: 12px;
 
 }
-.majorInput{
+.majorInputAca{
 /* 입학일 */
 
 position: absolute;
 width: 340px;
 height: 80px;
 left: 17px;
-top: 280px;
+top: 310px;
+
 
 }
-.name4{
+.majorAca{
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
@@ -232,22 +240,23 @@ top: 280px;
     color: #000000;
     
 }
-.major{
+.majorInputAca input{
 /* Rectangle 35 */
 
 box-sizing: border-box;
 
-width: 157px;
+width: 337px;
 height: 31px;
 left: 15px;
 top: 411px;
 
-background: #FFFCFC;
+background: #FFFFFF;
 border: 1px solid #000000;
-border-radius: 10px;
+border-radius: 12px;
+
 
 }
-.doubleInput{
+.double_Input{
 /* 졸업일 (예정) */
 
 
@@ -255,7 +264,7 @@ position: absolute;
 width: 340px;
 height: 80px;
 left: 17px;
-top: 360px;
+top: 400px;
 
 }
 .name5{
@@ -269,6 +278,19 @@ top: 360px;
     
     color: #000000;
 }
+.selectMajor{
+    box-sizing: border-box;
+    position: absolute;
+    width: 157px;
+    height: 31px;
+    left: 3px;
+
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    cursor: pointer;
+}
 .double{
 /* Rectangle 37 */
 
@@ -280,22 +302,22 @@ height: 31px;
 left: 180px;
 top: px;
 
-background: #FFFCFC;
+background: #FFFFFF;
 border: 1px solid #000000;
 border-radius: 10px;
 
 }
-.degreeInput{
+.degree__Input{
 /* 학점 */
 
 position: absolute;
 width: 340px;
 height: 80px;
 left: 17px;
-top: 440px;
+top: 490px;
 
 }
-.name6{
+.degreeName{
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
@@ -322,14 +344,14 @@ border: 1px solid #000000;
 border-radius: 12px;
 
 }
-.creditInput{
+.credit_Input{
 /* 수상 경력 */
 
 position: absolute;
 width: 340px;
 height: 80px;
 left: 17px;
-top: 520px;
+top: 580px;
 
 }
 .name7{
@@ -359,12 +381,12 @@ border: 1px solid #000000;
 border-radius: 12px;
 
 }
-.careerInput{
+.career_Input{
     position: absolute;
     width: 340px;
     height: 80px;
     left: 17px;
-    top: 600px;
+    top: 670px;
 
 }
 .name8{
@@ -390,17 +412,17 @@ border-radius: 12px;
     border-radius: 12px;
 }
 
-.submButton{
+.submitAca button{
     position: absolute;
-    left: 6.4%;
-    right: 6.4%;
-    top: 90.03%;
-    bottom: 3.32%;
+    left: 15.4%;
+    right: 55.4%;
+    top: 93.03%;
+    bottom: 1.32%;
     
     outline: none;
 	border: none;
     background: rgba(81, 81, 81, 0.6);
-    border-radius: 12px;
+    border-radius: 50px;
     
 }
 .subm{
@@ -419,4 +441,19 @@ border-radius: 12px;
     cursor: pointer;
 
     
+}
+.deleteAca button{
+    position: absolute;
+    left: 55.4%;
+    right: 15.4%;
+    top: 93.03%;
+    bottom: 1.32%;
+    
+    outline: none;
+	border: none;
+    background: rgba(81, 81, 81, 0.6);
+    border-radius: 50px;
+}
+.backAca{
+    cursor: pointer;
 }

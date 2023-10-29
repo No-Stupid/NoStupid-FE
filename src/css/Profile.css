@@ -11,39 +11,32 @@ body{
     margin: 0 auto;
 
 }
-.containerCa1{
-    position: absolute;
-    width: 340px;
-    height: 18.31px;
-    left: 22px;
-    top: 12px;
 
-
-}
-.containerCa2{
+.container1Pro{
     position: absolute;
     width: 340px;
     height: 65px;
     left: 22px;
-    top: 51px;
+    top: 15px;
 
 }
-.back{
+.backPro{
+
     position: absolute;
     width: 24px;
     height: 24px;
 
 }
-.backCa{
-    cursor: pointer;
-}
-.titleCa{
+
+.titlePro{
+
 
 position: absolute;
-width: 150px;
+width: 200px;
 height: 35px;
-top:30px;
+top:38px;
 left:0px;
+
 
 font-family: 'Bebas Neue';
 font-style: normal;
@@ -55,47 +48,32 @@ letter-spacing: 0.01em;
 color: #000000;
 
 }
-.line{
+.linePro{
+
+    
     position: absolute;
     width: 385px;
     height: 0px;
     right: 0px;
-    top: 120px;
+    top: 100px;
     
     border: 1px solid #EBEBEB;
     
 }
-.containerCa3{
+.container2Pro{
     position: absolute;
     width: 375px;
-    height:800px;
+    height: 812px;
     left: 0px;
     top: 125px;
     border-radius: 0px 0px 0px 0px;
     background: #ffffff;
 }
 
-.starDiv{
 
-width: 80px;
-height: 25px;
-left: 9px;
-top: 123px;
-}
-.starInput{
-left: 9px;
-font-family: 'Bebas Neue';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 12px;
-letter-spacing: 0.01em;
+.pictureInputPro{
 
-color: #949494;
 
-}
-
-.ca1Input{
 position: absolute;
 width: 340px;
 height: 80px;
@@ -103,41 +81,17 @@ left: 17px;
 top: 40px;
 
 }
-.ca1Name{
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    /* identical to box height */
-    letter-spacing: 0.01em;
-    
-    color: #000000;
-}
-.ca1Input input{
+.nameInputPro{
 
-box-sizing: border-box;
-
-width: 337px;
-height: 28px;
-
-top: 40px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-border-radius: 12px;
-
-}
-.ca2Input{
 
 position: absolute;
 width: 340px;
 height: 80px;
 left: 17px;
-top: 140px;
+top: 145px;
 
 }
-.ca2Name{
+.namePro{
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 00;
@@ -148,9 +102,9 @@ top: 140px;
     
     color: #000000;
 }
-.ca2Input input{
-box-sizing: border-box;
+.nameInputPro input{
 
+box-sizing: border-box;
 
 width: 337px;
 height: 28px;
@@ -162,16 +116,15 @@ border: 1px solid #000000;
 border-radius: 12px;
 
 }
-.ca3Input{
-
+.oneInputPro{
 position: absolute;
 width: 340px;
 height: 80px;
 left: 17px;
-top: 240px;
+top: 245px;
 
 }
-.ca3Name{
+.oneNamePro{
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
@@ -183,7 +136,7 @@ top: 240px;
     color: #000000;
     
 }
-.ca3Input input{
+.oneInputPro input{
 
 box-sizing: border-box;
 
@@ -198,16 +151,16 @@ border-radius: 10px;
 
 }
 
-.ca4Input{
+.birthInputPro{
 
 position: absolute;
 width: 340px;
 height: 80px;
 left: 17px;
-top: 340px;
+top: 345px;
 
 }
-.ca4Name{
+.birthPro{
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
@@ -218,31 +171,28 @@ top: 340px;
     
     color: #000000;
 }
-.ca4Input input{
+.birthInputPro input{
+    
+    box-sizing: border-box;
+    width: 337px;
+    height: 28px;
+    left: 15px;
+    top: 589px;
 
-box-sizing: border-box;
-
-
-width: 337px;
-height: 28px;
-left: 15px;
-top: 589px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-border-radius: 12px;
-
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
 }
-.ca5Input{
+.numInputPro{
 
 position: absolute;
 width: 340px;
 height: 80px;
 left: 17px;
-top: 440px;
+top: 445px;
 
 }
-.ca5Name{
+.numPro{
 font-family: 'Bebas Neue';
 font-style: normal;
 font-weight: 400;
@@ -253,7 +203,7 @@ letter-spacing: 0.01em;
 color: #000000;
 
 }
-.ca5Input input{
+.numInputPro input{
 
 box-sizing: border-box;
 
@@ -268,20 +218,53 @@ border: 1px solid #000000;
 border-radius: 12px;
 
 }
-.submitCa button{
+.emailInputPro{    
     position: absolute;
-    left: 18.4%;
-    right:55.4%;
-    top: 85.03%;
-    bottom: 6.32%;
+    width: 340px;
+    height: 80px;
+    left: 17px;
+    top: 540px;
+    
+}
+.emailPro{
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+
+color: #000000;
+}
+.emailInputPro input{
+    box-sizing: border-box;
+
+
+    width: 337px;
+    height: 28px;
+    left: 14px;
+    top: 668px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 12px;
+
+}
+
+.submitButtonPro button{
+    position: absolute;
+    left: 35.4%;
+    right: 35.4%;
+    top: 83.03%;
+    bottom: 11.32%;
     
     outline: none;
 	border: none;
     background: rgba(81, 81, 81, 0.6);
-    border-radius: 50px;
+    border-radius: 25px;
     
 }
-.caSubm{
+.submPro{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -295,18 +278,24 @@ border-radius: 12px;
     color: #050000;
     
     cursor: pointer;
-
     
 }
-.deleteCa button{
-    position: absolute;
-    left: 55.4%;
-    right: 18.4%;
-    top: 85.03%;
-    bottom: 6.32%;
-    
-    outline: none;
-	border: none;
-    background: rgba(81, 81, 81, 0.6);
-    border-radius: 50px;
+.FaArrowLeftPro{
+    cursor: pointer;
+}
+.FaUserPro{
+    background-color:#FFFFFF;
+
+    color:  #b0b0b0;
+    font-size: 15px;
+    height: 75px;
+    width: 75px;
+    margin-left: 140px;
+    margin-top: 1px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
 }

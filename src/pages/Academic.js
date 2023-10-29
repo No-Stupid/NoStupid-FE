@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import React, { useEffect, useState, useRef } from 'react'
 import '../css/Academic.css';
+import { FaArrowLeft } from "react-icons/fa"
 
 
 export default function Academic() {
@@ -12,76 +13,103 @@ export default function Academic() {
         //axios.post('/', data)
     }
 
+    const schoolBand =[
+        "초등학교",
+        "중학교",
+        "고등학교",
+        "대학교",
+        "대학원"
+    ];
+    const [selectedSchoolBand, setSelectedSchoolBand] = useState([]);
+
+    const majorBand =[
+        "부전공",
+        "복수전공",
+        "이중전공",
+    ];
+    const [selectedMajorBand, setSelectedMajorBand] = useState([]);
+
     return (
         //<form onSubmit={handleSubmit(onSubmit)}>
-            <div className="page">
-                <div className="container1" >  {/* 상단바 */}
+            <div className="page_">
+
+
+                <div className="container1_2">  {/* 타이틀, 뒤로 가기 */}
+                    <div className="backIcon">
+                        <FaArrowLeft className="backAca"/></div>  {/* 뒤로 가기 */}
+                    <div className="title_Aca">학력 정보</div>  {/* 타이틀 */}
                 </div>
-            
 
-                <div className="container2">  {/* 타이틀, 뒤로 가기 */}
-                    <div className="back"> ( </div>  {/* 뒤로 가기 */}
-                    <div className="title">학력 정보</div>  {/* 타이틀 */}
-                </div>
+                <div className="line__"></div>
 
-                <div className="line"></div>
-
-                <div className="container3">  {/* 타이틀 아래 */}
+                <div className="container3__">  {/* 타이틀 아래 */}
                     <div className="starDiv">
                         <p className='starInput'>*은 필수 입니다</p>
                     </div>
 
-                    <div className="schoolInput">  {/* 입력내용 */}
-                        <p className='name1'>학교 *</p>
-                        {/* 학교 선택 박스 추가 , 초중고는 막을 기능 추가 */}
+                    <div className="schoolInput_">  {/* 입력내용 */}
+                        <p className='name1_'>학교 *</p>
+                        <select 
+                        className="selectSchool"
+                        onChange={(e) => setSelectedSchoolBand(e.target.value)}>
+                            <option selected disabled>선택</option>
+                            {schoolBand.map(schoolBand => <option> {schoolBand}</option>)}
+                        </select>
+                        {/* 초중고는 막을 기능 추가 */}
                         <input 
                             className="school"
                             placeholder='학교명'
                         />
                     </div>
 
-                    <div className="inInput">  {/* 입력내용 */}     
-                        <p className='name2'>입학일 *</p>
+                    <div className="in__Input">    
+                        <p className='name2_'>입학일 *</p>
                         <input 
                             className="in"
                             placeholder='입학일'
                         />
                     </div>
                     
-                    <div className="outInput">  {/* 입력내용 */}   
-                        <p className='name3'>졸업일[예정일] *</p>
+                    <div className="out__Input">  {/* 입력내용 */}   
+                        <p className='name3_'>졸업일[예정일] *</p>
                         <input 
                             className="out"
                             placeholder='졸업일'
                         />   
                     </div>
-                    
-                    <div className="majorInput">  {/* 입력내용 */}
-                        <p className='name4'>전공 </p>
+
+                {selectedSchoolBand === "대학원" || selectedSchoolBand ==="대학교"? 
+                <div>
+                    <div className="majorInputAca"> 
+                        <p className='majorAca'>전공 </p>
                         <input 
-                            className="major"
                             placeholder='전공'
                         />
                     </div>
 
-                    <div className="doubleInput">  {/* 입력내용 */} 
+                    <div className="double_Input">  
                         <p className='name5'>부/복수/이중 전공 </p>
-                        {/* 전공 선택 박스 추가 */}
+                        <select 
+                        className="selectMajor"
+                        onChange={(e) => setSelectedMajorBand(e.target.value)}>
+                            <option selected disabled>선택</option>
+                            {majorBand.map(majorBand => <option> {majorBand}</option>)}
+                        </select>
                         <input 
                             className="double"
                             placeholder='부/복수 전공명'
                         />          
                     </div>
                     
-                    <div className="degreeInput">  {/* 입력내용 */}
-                        <p className='name6'>학위 </p>
+                    <div className="degree__Input">  
+                        <p className='degreeName'>학위 </p>
                         <input 
                             className="degree"
                             placeholder='학위'
                         /> 
                     </div>
                             
-                    <div className="creditInput">  {/* 입력내용 */}
+                    <div className="credit_Input"> 
                         <p className='name7'>학점 </p>
                         <input 
                             className="credit"
@@ -89,20 +117,29 @@ export default function Academic() {
                         /> 
                     </div>
                             
-                    <div className="careerInput">  {/* 입력내용 */}
+                    <div className="career_Input">  
                         <p className='name8'>수상 경력 </p>
                         <input 
                             className="career"
                             placeholder='수상 경력'
                         /> 
                     </div>
+                </div> : null}
 
-                    <div className="submit">  {/* 버튼 */}   
+                    <div className="submitAca">  {/* 버튼 */}   
                         <button
                         //onClick={onClickConfirmButton}
                         //disabled={notAllow}
-                        className='submButton'>
-                        <p className='subm'>제출</p>
+                        >
+                        <p className='subm'>수정</p>
+                        </button>
+                    </div>
+                    <div className="deleteAca">  {/* 버튼 */}   
+                        <button
+                        //onClick={onClickConfirmButton}
+                        //disabled={notAllow}
+                        >
+                        <p className='subm'>삭제</p>
                         </button>
                     </div>
                         

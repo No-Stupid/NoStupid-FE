@@ -11,7 +11,7 @@ body{
     margin: 0 auto;
 
 }
-.container1{
+.containerCa1{
     position: absolute;
     width: 340px;
     height: 18.31px;
@@ -20,7 +20,7 @@ body{
 
 
 }
-.container2{
+.containerCa2{
     position: absolute;
     width: 340px;
     height: 65px;
@@ -36,7 +36,7 @@ body{
 
 }
 
-.title{
+.titleCa{
 /* 학력 정보 */
 
 position: absolute;
@@ -68,10 +68,10 @@ color: #000000;
     border: 1px solid #EBEBEB;
     
 }
-.container3{
+.containerCa3{
     position: absolute;
     width: 375px;
-    height: 812px;
+    height: 650px;
     left: 0px;
     top: 125px;
     border-radius: 0px 0px 0px 0px;
@@ -99,7 +99,7 @@ color: #949494;
 
 }
 
-.inInput{
+.po1Input{
 /* 학위 */
 
 position: absolute;
@@ -109,7 +109,7 @@ left: 17px;
 top: 40px;
 
 }
-.name2{
+.po1Name{
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
@@ -120,7 +120,7 @@ top: 40px;
     
     color: #000000;
 }
-.in{
+.po1Input input{
 /* Rectangle 16 */
 
 box-sizing: border-box;
@@ -135,7 +135,7 @@ border: 1px solid #000000;
 border-radius: 12px;
 
 }
-.outInput{
+.po2Input{
 /* 전공 */
 
 position: absolute;
@@ -145,7 +145,7 @@ left: 17px;
 top: 140px;
 
 }
-.name3{
+.po2Name{
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 00;
@@ -156,7 +156,7 @@ top: 140px;
     
     color: #000000;
 }
-.out{
+.po2Input input{
 /* Rectangle 27 */
 
 box-sizing: border-box;
@@ -172,175 +172,52 @@ border: 1px solid #000000;
 border-radius: 12px;
 
 }
-.majorInput{
-/* 입학일 */
 
-position: absolute;
-width: 340px;
-height: 80px;
-left: 17px;
-top: 240px;
-
-}
-.name4{
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    /* identical to box height */
-    letter-spacing: 0.01em;
-    
-    color: #000000;
-    
-}
-.major{
-/* Rectangle 35 */
-
-box-sizing: border-box;
-
-width: 337px;
-height: 28px;
-left: 17px;
-top: 331px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-border-radius: 10px;
-
-}
-
-.degreeInput{
-/* 학점 */
-
-position: absolute;
-width: 340px;
-height: 80px;
-left: 17px;
-top: 340px;
-
-}
-.name6{
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    /* identical to box height */
-    letter-spacing: 0.01em;
-    
-    color: #000000;
-}
-.degree{
-/* Rectangle 19 */
-
-box-sizing: border-box;
-
-
-width: 337px;
-height: 28px;
-left: 15px;
-top: 589px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-border-radius: 12px;
-
-}
-.creditInput{
-/* 수상 경력 */
-
-position: absolute;
-width: 340px;
-height: 80px;
-left: 17px;
-top: 440px;
-
-}
-.name7{
-font-family: 'Bebas Neue';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 18px;
-letter-spacing: 0.01em;
-
-color: #000000;
-
-}
-.credit{
-/* Rectangle 28 */
-
-box-sizing: border-box;
-
-
-width: 337px;
-height: 28px;
-left: 14px;
-top: 668px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-border-radius: 12px;
-
-}
-.submButton1{
+.submitPo button{
     position: absolute;
-    left: 30.4%;
-    right: 30.4%;
-    top: 70.03%;
-    bottom: 23.32%;
-    
-    outline: none;
-	border: none;
-    background: rgba(81, 81, 81, 0.6);
-    border-radius: 12px;
-    
-}
-.subm1{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.05em;
-    
-    color: #050000;
-    
-    cursor: pointer;
-
-    
-}
-.submButton2{
-    position: absolute;
-    left: 6.4%;
-    right: 6.4%;
-    top: 80.03%;
+    left: 20.4%;
+    right: 55.4%;
+    top: 79.03%;
     bottom: 13.32%;
     
     outline: none;
 	border: none;
     background: rgba(81, 81, 81, 0.6);
-    border-radius: 12px;
+    border-radius: 50px;
     
+    cursor: pointer;
 }
-.subm2{
+.poSubm{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 17px;
 
     align-items: center;
     text-align: center;
     letter-spacing: 0.05em;
     
-    color: #050000;
+    color: #FFFFFF;
     
-    cursor: pointer;
+
 
     
+}
+.deletePo button{
+    position: absolute;
+    left: 55.4%;
+    right: 20.4%;
+    top: 79.03%;
+    bottom: 13.32%;
+    
+    outline: none;
+	border: none;
+    background: rgba(81, 81, 81, 0.6);
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+.backPo{
+    cursor: pointer;
 }

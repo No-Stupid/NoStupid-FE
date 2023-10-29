@@ -161,11 +161,7 @@ p{
     top: 156px;
 
     box-sizing: border-box;
-    position: absolute;
-    width: 327px;
-    height: 48px;
-    left: 26px;
-    top: 156px;
+
     border: 1px solid rgba(39, 39, 39, 0.5);
     border-radius: 12px;
 }
